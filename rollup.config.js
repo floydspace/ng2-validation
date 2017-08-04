@@ -14,7 +14,8 @@ module.exports = {
   ],
   globals: {
     '@angular/core': 'ng.core',
-    '@angular/forms': 'ng.forms'
+    '@angular/forms': 'ng.forms',
+    'libphonenumber-js': 'libphonenumber.js'
   },
-  external: [ '@angular/core', '@angular/forms' ]
+  external: [ '@angular/core', '@angular/forms', 'libphonenumber-js' ]
 };
