@@ -1,7 +1,7 @@
 {
-  "name": "ng2-validation",
-  "version": "4.2.0",
-  "description": "angular2 validation",
+  "name": "@floydspace/ngx-validation",
+  "version": "1.0.0",
+  "description": "angular 2, 4 set of custom validation directives",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "scripts": {
@@ -17,19 +17,20 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yuyang041060120/angular2-validate.git"
+    "url": "git+https://github.com/F1oyd/ng2-validation.git"
   },
   "keywords": [
     "angular2",
+    "angular4",
     "validate",
     "validation"
   ],
   "author": "yuyang041060120 <yuyang041060120@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/yuyang041060120/angular2-validate/issues"
+    "url": "https://github.com/F1oyd/ng2-validation/issues"
   },
-  "homepage": "https://github.com/yuyang041060120/angular2-validate#readme",
+  "homepage": "https://github.com/F1oyd/ng2-validation#readme",
   "devDependencies": {
     "@angular/common": "4.0.0",
     "@angular/compiler": "4.0.0",
@@ -66,6 +67,6 @@
     "zone.js": "^0.8.4"
   },
   "dependencies": {
-    "libphonenumber-js": "^0.4.5"
+    "libphonenumber-js": "^0.4.27"
   }
 }

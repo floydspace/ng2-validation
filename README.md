@@ -1,16 +1,15 @@
+## Fork of [yuyang041060120/ng2-validation](https://github.com/yuyang041060120/ng2-validation)
+
+Included fix of the validation of formatted phone numbers.
+
 # Description
 
-Angular2 custom validation, inspired by jQuery validation.
+Angular 2, 4 set of custom validation directives.
 
 # Install
 
 ```bash
-npm install ng2-validation --save
-```
-# Systemjs
-
-```bash
-'ng2-validation': 'npm:ng2-validation/bundles/ng2-validation.umd.js'
+npm install @floydspace/ngx-validation --save
 ```
 
 # Validators
@@ -20,6 +19,17 @@ npm install ng2-validation --save
 - required
 - minlength
 - maxlength
+- pattern
+
+## angular4 built-in validators
+
+- min
+- max
+- required
+- requiredTrue
+- email
+- minLength
+- maxLength
 - pattern
 
 ## custom validators
@@ -60,7 +70,7 @@ import `FormsModule` and `CustomFormsModule` in *app.module.ts*
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
-import { CustomFormsModule } from 'ng2-validation'
+import { CustomFormsModule } from '@floydspace/ngx-validation';
 
 import { AppComponent } from './app.component';
 
@@ -288,7 +298,7 @@ import `CustomValidators` in *app.component.ts*
 ```javascript
 import { Component } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
-import { CustomValidators } from 'ng2-validation';
+import { CustomValidators } from '@floydspace/ngx-validation';
 
 @Component({
     selector: 'app',
