@@ -23,8 +23,6 @@ npm install @floydspace/ngx-validation --save
 
 ## angular4 built-in validators
 
-- min
-- max
 - required
 - requiredTrue
 - email
@@ -35,17 +33,17 @@ npm install @floydspace/ngx-validation --save
 ## custom validators
 
 - rangeLength
-- min
+- min `*`
 - gt
 - gte
-- max
+- max `*`
 - lt
 - lte
 - range
 - digits
 - number
 - url
-- email
+- email `*`
 - date
 - minDate
 - maxDate
@@ -59,6 +57,8 @@ npm install @floydspace/ngx-validation --save
 - notEqual
 - equalTo
 - notEqualTo
+
+A directive marked with `*` works if there is no Angular built-in analog.
 
 # Usage
 

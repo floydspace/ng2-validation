@@ -1,41 +1,15 @@
-# v3.4.0
+# 1.0.2 (2017-08-05)
 
-add lt and gt validator
+## Features
+* **email**: prevent validator injection if there is a built-in email validator
+* **max**: prevent validator injection if there is a built-in max validator
+* **min**: prevent validator injection if there is a built-in min validator
 
-# v3.5.0
+# 1.0.1 (2017-08-04)
 
-re-trigger validate when validate-property change
+## Bug Fixes
+* **phone**: fixed validation of formated phone numbers
 
-# v3.6.0
+# 1.0.0 (2017-08-04)
 
-Improved US Phone Number formats
-detail see https://github.com/yuyang041060120/ng2-validation/pull/43/
-
-# v3.7.0
-
-code split
-
-# v3.7.1
-
-add umd file
-
-# v3.8.0
-
-[#33](https://github.com/yuyang041060120/ng2-validation/issues/33)
-
-# v3.9.0
-
-upgrade to angular 4
-
-# v3.9.1
-
-upgrade dev dependencies and webpack@2.x.x
-
-# v4.0.0
-
-- support libphonenumber [#23](https://github.com/yuyang041060120/ng2-validation/issues/23)
-- add lte and gte validator [#69](https://github.com/yuyang041060120/ng2-validation/issues/69)
-
-# v4.2.0
-
-- add error details in range validator [#82](https://github.com/yuyang041060120/ng2-validation/issues/82)
+See Origin [CHANGELOG](https://github.com/yuyang041060120/ng2-validation/blob/master/CHANGELOG.md)
