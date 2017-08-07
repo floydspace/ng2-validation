@@ -1,5 +1,6 @@
 import { Directive, Input, forwardRef, OnInit, OnChanges, SimpleChanges } from '@angular/core';
-import { NG_VALIDATORS, Validator, ValidatorFn, AbstractControl, Validators } from '@angular/forms';
+import { NG_VALIDATORS, Validator, ValidatorFn, AbstractControl } from '@angular/forms';
+import * as Forms from '@angular/forms';
 
 import { max } from './';
 
@@ -12,7 +13,7 @@ const MAX_VALIDATOR: any = {
 @Directive({
   selector: '[max][formControlName],[max][formControl],[max][ngModel]',
   // Prevent validator injection if there is a built-in max validator.
-  providers: Validators['max'] ? null : [MAX_VALIDATOR]
+  providers: Forms['MaxValidator'] ? null : [MAX_VALIDATOR]
 })
 export class MaxValidator implements Validator, OnInit, OnChanges {
   @Input() max: number;

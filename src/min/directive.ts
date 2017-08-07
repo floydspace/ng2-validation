@@ -1,5 +1,6 @@
 import { Directive, Input, forwardRef, OnInit, OnChanges, SimpleChanges } from '@angular/core';
-import { NG_VALIDATORS, Validator, ValidatorFn, AbstractControl, Validators } from '@angular/forms';
+import { NG_VALIDATORS, Validator, ValidatorFn, AbstractControl } from '@angular/forms';
+import * as Forms from '@angular/forms';
 
 import { min } from './';
 
@@ -12,7 +13,7 @@ const MIN_VALIDATOR: any = {
 @Directive({
   selector: '[min][formControlName],[min][formControl],[min][ngModel]',
   // Prevent validator injection if there is a built-in min validator.
-  providers: Validators['min'] ? null : [MIN_VALIDATOR]
+  providers: Forms['MinValidator'] ? null : [MIN_VALIDATOR]
 })
 export class MinValidator implements Validator, OnInit, OnChanges {
   @Input() min: number;
