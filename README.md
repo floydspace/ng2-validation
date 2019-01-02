@@ -317,7 +317,7 @@ export class AppComponent {
 
 ```html
 <input type="text" formControlName="field"/>
-<p *ngIf="demoForm.from.controls.field.errors?.rangeLength">error message</p>
+<p *ngIf="demoForm.from.controls.field.errors?.range">error message</p>
 ```
 
 ### rangeLength
